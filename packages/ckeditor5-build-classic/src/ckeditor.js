@@ -13,7 +13,7 @@ import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+// import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
@@ -29,7 +29,51 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+// import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+
+// added plugins
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
+import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage.js';
+import AutoLink from '@ckeditor/ckeditor5-link/src/autolink.js';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
+import DataFilter from '@ckeditor/ckeditor5-html-support/src/datafilter.js';
+import DataSchema from '@ckeditor/ckeditor5-html-support/src/dataschema.js';
+import FindAndReplace from '@ckeditor/ckeditor5-find-and-replace/src/findandreplace.js';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
+import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport.js';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight.js';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed.js';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert.js';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock.js';
+import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage.js';
+import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
+import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown.js';
+import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js';
+import Mention from '@ckeditor/ckeditor5-mention/src/mention.js';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
+import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
+import SpecialCharactersArrows from '@ckeditor/ckeditor5-special-characters/src/specialcharactersarrows.js';
+import SpecialCharactersCurrency from '@ckeditor/ckeditor5-special-characters/src/specialcharacterscurrency.js';
+import SpecialCharactersEssentials from '@ckeditor/ckeditor5-special-characters/src/specialcharactersessentials.js';
+import SpecialCharactersLatin from '@ckeditor/ckeditor5-special-characters/src/specialcharacterslatin.js';
+import SpecialCharactersMathematical from '@ckeditor/ckeditor5-special-characters/src/specialcharactersmathematical.js';
+import SpecialCharactersText from '@ckeditor/ckeditor5-special-characters/src/specialcharacterstext.js';
+import StandardEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/standardeditingmode.js';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript.js';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript.js';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
+import TextPartLanguage from '@ckeditor/ckeditor5-language/src/textpartlanguage.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -42,8 +86,8 @@ ClassicEditor.builtinPlugins = [
 	Italic,
 	BlockQuote,
 	CKFinder,
-	CloudServices,
-	EasyImage,
+	// CloudServices,
+	// EasyImage,
 	Heading,
 	Image,
 	ImageCaption,
@@ -58,7 +102,72 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+
+	// added plugins
+	Alignment,
+	Autoformat,
+	AutoImage,
+	AutoLink,
+	BlockQuote,
+	Bold,
+	Code,
+	CodeBlock,
+	DataFilter,
+	DataSchema,
+	Essentials,
+	FindAndReplace,
+	FontBackgroundColor,
+	FontColor,
+	FontFamily,
+	FontSize,
+	GeneralHtmlSupport,
+	Heading,
+	Highlight,
+	HorizontalLine,
+	HtmlEmbed,
+	Image,
+	ImageCaption,
+	ImageInsert,
+	ImageResize,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload,
+	Indent,
+	IndentBlock,
+	Italic,
+	Link,
+	LinkImage,
+	List,
+	ListStyle,
+	Markdown,
+	MediaEmbed,
+	MediaEmbedToolbar,
+	Mention,
+	Paragraph,
+	PasteFromOffice,
+	RemoveFormat,
+	SourceEditing,
+	SpecialCharacters,
+	SpecialCharactersArrows,
+	SpecialCharactersCurrency,
+	SpecialCharactersEssentials,
+	SpecialCharactersLatin,
+	SpecialCharactersMathematical,
+	SpecialCharactersText,
+	StandardEditingMode,
+	Strikethrough,
+	Subscript,
+	Superscript,
+	Table,
+	TableCellProperties,
+	TableProperties,
+	TableToolbar,
+	TextPartLanguage,
+	TextTransformation,
+	Underline,
+	WordCount
+
 ];
 
 // Editor configuration.
@@ -66,6 +175,11 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 			'|',
 			'bold',
 			'italic',
