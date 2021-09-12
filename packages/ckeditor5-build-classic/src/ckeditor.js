@@ -53,7 +53,7 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock.js';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage.js';
 import ListStyle from '@ckeditor/ckeditor5-list/src/liststyle.js';
-import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown.js';
+// import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown.js';
 import MediaEmbedToolbar from '@ckeditor/ckeditor5-media-embed/src/mediaembedtoolbar.js';
 import Mention from '@ckeditor/ckeditor5-mention/src/mention.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
@@ -140,7 +140,7 @@ ClassicEditor.builtinPlugins = [
 	LinkImage,
 	List,
 	ListStyle,
-	Markdown,
+	// Markdown,
 	MediaEmbed,
 	MediaEmbedToolbar,
 	Mention,
