@@ -171,7 +171,7 @@ ClassicEditor.builtinPlugins = [
 ];
 
 // Editor configuration.
-ClassicEditor.defaultConfig = {
+ClassicEditor.defaultConfig =  {
 	toolbar: {
 		items: [
 			'heading',
@@ -199,9 +199,9 @@ ClassicEditor.defaultConfig = {
 			'horizontalLine',
 			'|',
 			'link',
-			//'uploadImage',
-			'insertImage',
-			//'mediaEmbed',
+			// 'uploadImage',
+			// 'insertImage',
+			// 'mediaEmbed',
 			'insertTable',
 			'specialCharacters',
 			'undo',
@@ -211,6 +211,7 @@ ClassicEditor.defaultConfig = {
 			'sourceEditing'
 		]
 	},
+	/*
 	image: {
 		toolbar: [
 			'imageStyle:inline',
@@ -221,6 +222,7 @@ ClassicEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
+	*/
 	table: {
 		contentToolbar: [
 			'tableColumn',
@@ -229,5 +231,6 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'en',
+	shouldNotGroupWhenFull: true
 };
