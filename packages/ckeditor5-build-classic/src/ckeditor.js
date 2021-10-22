@@ -200,8 +200,8 @@ ClassicEditor.defaultConfig =  {
 			'|',
 			'link',
 			// 'uploadImage',
-			// 'insertImage',
-			// 'mediaEmbed',
+			'insertImage',
+			'mediaEmbed',
 			'insertTable',
 			'specialCharacters',
 			'undo',
@@ -211,7 +211,6 @@ ClassicEditor.defaultConfig =  {
 			'sourceEditing'
 		]
 	},
-	/*
 	image: {
 		toolbar: [
 			'imageStyle:inline',
@@ -222,7 +221,6 @@ ClassicEditor.defaultConfig =  {
 			'imageTextAlternative'
 		]
 	},
-	*/
 	table: {
 		contentToolbar: [
 			'tableColumn',
