@@ -19,11 +19,11 @@ import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
-import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+// import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+// import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
@@ -132,7 +132,7 @@ ClassicEditor.builtinPlugins = [
 	ImageResize,
 	ImageStyle,
 	ImageToolbar,
-	ImageUpload,
+	// ImageUpload,
 	Indent,
 	IndentBlock,
 	Italic,
@@ -141,7 +141,7 @@ ClassicEditor.builtinPlugins = [
 	List,
 	ListStyle,
 	// Markdown,
-	MediaEmbed,
+	// MediaEmbed,
 	MediaEmbedToolbar,
 	Mention,
 	Paragraph,
@@ -199,7 +199,7 @@ ClassicEditor.defaultConfig =  {
 			'horizontalLine',
 			'|',
 			'link',
-			// 'insertImage',
+			'insertImage',
 			// 'mediaEmbed',
 			'insertTable',
 			'specialCharacters',
