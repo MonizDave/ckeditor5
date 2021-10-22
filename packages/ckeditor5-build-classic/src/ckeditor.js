@@ -200,8 +200,8 @@ ClassicEditor.defaultConfig =  {
 			'|',
 			'link',
 			// 'uploadImage',
-			'insertImage',
-			'mediaEmbed',
+			'image',
+			// 'mediaEmbed',
 			'insertTable',
 			'specialCharacters',
 			'undo',
@@ -211,6 +211,7 @@ ClassicEditor.defaultConfig =  {
 			'sourceEditing'
 		]
 	},
+	/*
 	image: {
 		toolbar: [
 			'imageStyle:inline',
@@ -228,6 +229,7 @@ ClassicEditor.defaultConfig =  {
 			'mergeTableCells'
 		]
 	},
+	*/
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en',
 	shouldNotGroupWhenFull: true
