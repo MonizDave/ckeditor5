@@ -199,7 +199,7 @@ ClassicEditor.defaultConfig =  {
 			'horizontalLine',
 			'|',
 			'link',
-			// 'uploadImage',
+			'uploadImage',
 			'insertImage',
 			// 'mediaEmbed',
 			'insertTable',
