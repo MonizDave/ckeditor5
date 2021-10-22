@@ -199,8 +199,9 @@ ClassicEditor.defaultConfig =  {
 			'horizontalLine',
 			'|',
 			'link',
-			'uploadImage',
-			'insertImage',
+			'image',
+			// 'uploadImage',
+			// 'insertImage',
 			// 'mediaEmbed',
 			'insertTable',
 			'specialCharacters',
@@ -212,6 +213,7 @@ ClassicEditor.defaultConfig =  {
 		]
 	},
 	image: {
+		insert,
 		toolbar: [
 			'imageStyle:inline',
 			'imageStyle:block',
