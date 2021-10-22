@@ -7,12 +7,12 @@
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-// import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-// import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 // import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -80,12 +80,12 @@ export default class ClassicEditor extends ClassicEditorBase {}
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
-	// UploadAdapter,
+	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
 	BlockQuote,
-	// CKFinder,
+	CKFinder,
 	// CloudServices,
 	// EasyImage,
 	Heading,
@@ -122,19 +122,30 @@ ClassicEditor.builtinPlugins = [
 	FontFamily,
 	FontSize,
 	GeneralHtmlSupport,
+	Heading,
 	Highlight,
 	HorizontalLine,
 	HtmlEmbed,
+	Image,
+	ImageCaption,
 	ImageInsert,
 	ImageResize,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload,
+	Indent,
 	IndentBlock,
 	Italic,
+	Link,
 	LinkImage,
+	List,
 	ListStyle,
 	// Markdown,
+	MediaEmbed,
 	MediaEmbedToolbar,
 	Mention,
 	Paragraph,
+	PasteFromOffice,
 	RemoveFormat,
 	SourceEditing,
 	SpecialCharacters,
@@ -148,9 +159,12 @@ ClassicEditor.builtinPlugins = [
 	Strikethrough,
 	Subscript,
 	Superscript,
+	Table,
 	TableCellProperties,
 	TableProperties,
+	TableToolbar,
 	TextPartLanguage,
+	TextTransformation,
 	Underline,
 	WordCount
 
@@ -184,7 +198,8 @@ ClassicEditor.defaultConfig =  {
 			// 'htmlEmbed',
 			'horizontalLine',
 			'|',
-			//'link',
+			'link',
+			// 'uploadImage',
 			'insertImage',
 			// 'mediaEmbed',
 			'insertTable',
