@@ -211,7 +211,6 @@ ClassicEditor.defaultConfig =  {
 		]
 	},
 	image: {
-		insert,
 		toolbar: [
 			'imageStyle:inline',
 			'imageStyle:block',
